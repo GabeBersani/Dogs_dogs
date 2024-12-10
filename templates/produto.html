@@ -1,0 +1,17 @@
+<!--Inicio do corpo da página que sera utilizada como template-->
+
+{% extends 'home.html' %}
+
+{% block conteudo%}
+    {% for n in produto %}
+    <div class="card">
+        ID Produto: {{n.id_produto}}<br>
+        Nome Produto: {{n.nome_produto}} <br>
+        Preço: {{n.PRECO}} <br>
+        Categoria Produto: {{n.cat_produtos}} <br>
+
+    </div>
+    {% endfor %}
+{%endblock conteudo%}
+
+<!--Fim do corpo que sera utilizada como template-->

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends 'home.html'%}
+
+{% block conteudo %}
+
+
+<form action="{{url_for('nova_categoria')}}" method="POST">
+    <label for="nome_categoria" >Nova Categoria</label>
+    <input id="nome_categoria" name="nome_categoria" type="text">
+    <hr>
+    <button>Adicionar</button>
+    <button><a href="{{url_for('nova_categoria')}}">Cancelar</a></button>
+
+
+</form>
+
+
+{% endblock conteudo %}
+
+</body>
+</html>

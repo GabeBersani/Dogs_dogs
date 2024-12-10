@@ -1,0 +1,109 @@
+*{
+    /*vai colar na tela-sem borda do pc*/
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100vh;
+    font-family: "Berlin Sans FB";
+    font-size: 20px;
+    background-color: #E37A2A;
+}
+
+li, a{
+    color:black;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: black;
+}
+
+div p {
+    /*todos os parafrafos dentro de uma div*/;
+    display: inline;
+}
+
+div li {
+    display: block;
+}
+
+.container{
+    display: block;
+    /* altura*/
+    height: 100vh;
+    vertical-align: top;
+
+}
+
+header {
+    background-color: #203565;
+    display: block;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+
+}
+
+nav {
+    background-color: #118386;
+    display: inline-block;
+    height: 1000%;
+    width: 10%;
+    color: white;
+}
+
+main{
+     background-color: #E37A2A;
+    display: inline-block;
+    /*largura da tela*/
+    width: 89%;
+    /* altura*/
+    height: 100%;
+    vertical-align: top;
+    color: white;
+}
+
+.card{
+    background-color: #eaa677;
+    /*inline-block da pra mudar o tamanho*/
+
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 10px;
+    padding: 10px;
+    font-size: 20px;
+    /*para organizar deixar alinhado*/
+    float: left;
+
+}
+
+
+.botao{
+    font-size: 10px;
+    background-color: #86BFC0;
+    /*inline-block da pra mudar o tamanho*/
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    /*para organizar deixar alinhado*/
+    float: left;
+    text-align: center;
+}
+
+.botao:hover{
+    background-color:#299091;
+    border: 2px solid black;
+}
+
+.card:hover{
+    background-color: #af6c36;
+}

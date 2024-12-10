@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>Dogs & Dogs </h2>
+    </header>
+
+     <nav>
+         <a href="{{ url_for('novo_produto') }}"> <div class="botao">
+             Cadastrar Produto</div> </a>
+         <a href="{{ url_for('produto') }}"> <div class="botao">
+             Lista de Produtos Cadastrados</div> </a>
+
+
+         <a href="{{ url_for('nova_venda') }}"> <div class="botao">
+             Cadastrar Venda</div> </a>
+         <a href="{{ url_for('venda') }}"> <div class="botao">
+             Lista de Vendas Cadastradas</div> </a>
+
+
+         <a href="{{ url_for('nova_categoria') }}"> <div class="botao">
+                 Cadastrar Categoria</div> </a>
+          <a href="{{ url_for('categoria') }}"> <div class="botao">
+                 Lista de Categorias Cadastradas</div> </a>
+
+          <a href="{{ url_for('novo_cliente') }}"> <div class="botao">
+                 Cadastrar Cliente</div> </a>
+
+          <a href="{{ url_for('cliente') }}"> <div class="botao">
+                 Lista de Clientes Cadastrados</div> </a>
+
+
+    </nav>
+
+    <main>
+        {% for mensagem in get_flashed_messages() %}
+                {{ mensagem }}
+        {% endfor %}
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+
+</div>
+
+</body>
+</html>

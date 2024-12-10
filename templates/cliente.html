@@ -1,0 +1,19 @@
+<!--Inicio do corpo da página que sera utilizada como template-->
+
+{% extends 'home.html' %}
+
+{% block conteudo%}
+
+    {% for n in cliente %}
+    <div class="card">
+        CPF: {{n.CPF}}<br>
+        Nome Cliente: {{n.Nome2}} <br>
+        Telefone: {{n.telefone}} <br>
+        Profissão Cliente: {{n.Profissao2}} <br>
+        Área Cliente: {{n.Area2}} <br>
+
+    </div>
+    {% endfor %}
+{%endblock conteudo%}
+
+<!--Fim do corpo que sera utilizada como template-->
